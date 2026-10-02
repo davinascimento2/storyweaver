@@ -1,4 +1,14 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "services": {
+    "web": {
+      "root": ".",
+      "framework": "vite"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
 }
